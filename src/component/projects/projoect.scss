@@ -1,0 +1,37 @@
+
+@import '../../responsive';
+
+    .projects{
+        background-color: #000;
+        height:100vh;
+        padding-top:50px;
+        h1{
+            color: #fff;
+            font-size: 70px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    .swiper {
+   
+        height: 550px;
+        padding-top: 50px;
+
+        @include breakpoint(mobile){
+            padding-right:46%;
+        }
+
+        img{
+            height: 400px;
+            @include breakpoint(mobile){
+                height: 350px;
+            }
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        
+            background: white;
+        }
+    }
+}
+
+
